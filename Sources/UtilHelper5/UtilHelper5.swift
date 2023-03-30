@@ -8,10 +8,10 @@ public struct UtilFive: View {
     @State var btnClikFive = false
     @State var getHtmladsNw: String = ""
     
-    public init(listData: [String: String], pushTo: @escaping () -> (), getHtmladsNw: String) {
+    public init(listData: [String: String], pushTo: @escaping () -> (), tkenString: String) {
         self.listData = listData
         self.pushTo = pushTo
-        self.getHtmladsNw = getHtmladsNw
+        self.tkenString = tkenString
     }
     
     var pushTo: () -> ()
